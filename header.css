@@ -1,0 +1,111 @@
+
+
+#header .bottom .container {
+    max-width: 1200px;
+}
+
+.menu-border {
+    box-sizing: border-box;
+    min-height: 60px;
+    max-width: 1170px;
+    border: 2px solid #f2eae6;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-left: 30px;
+}
+
+.header-pages {
+    font-family: Gotham Rounded Book;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.copyrights, .header-pages {
+    color: #525866;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.header-pages .active {
+    color: #3d424d;
+}
+
+
+
+/*dropDownHeader------------------------------------------------*/
+
+
+.dropdown-item {
+    font-family: Gotham Rounded Book;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 17px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 4px solid #CD957A;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+    top: 100%;
+}
+
+
+
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .nav-link{   }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    .navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+    .navbar .nav-item:hover .dropdown-toggle::after {
+        transform: rotate(180deg);
+        border-top: 4px solid #FFC44D;
+    }
+
+    .dropdown-menu:after {
+        position: absolute;
+        content: "";
+        top: -2px;
+        left: 20px;
+        right: 20px;
+        width: calc(100% - 40px);
+        height: 4px;
+        border-radius: 2px;
+        background-color: #FFC44D;
+    }
+
+    .dropdown-menu {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #3D424D;
+    }
+
+    .dropdown-item {
+        padding: 12px 15px 10px 12px;
+        border-radius: 5px;
+        background-color: #474D59;
+        color: #FFFFFF;
+        margin: 1px 0;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .dropdown-menu {
+        border: none;
+        padding: 0;
+    }
+
+    .dropdown-item {
+        padding-left: 0;
+    }
+}
+
+
+/*------------------------*/
